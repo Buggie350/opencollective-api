@@ -1,8 +1,10 @@
-import { GraphQLString, GraphQLInputObjectType, GraphQLNonNull, GraphQLList } from 'graphql';
+import { GraphQLInputObjectType, GraphQLList,GraphQLNonNull, GraphQLString } from 'graphql';
+
 import { ExpenseType } from '../enum/ExpenseType';
-import { PayoutMethodInput } from './PayoutMethodInput';
-import { ExpenseAttachmentInput } from './ExpenseAttachmentInput';
+
 import { AccountReferenceInput } from './AccountReferenceInput';
+import { ExpenseAttachmentInput } from './ExpenseAttachmentInput';
+import { PayoutMethodInput } from './PayoutMethodInput';
 
 /**
  * Input type to use as the type for the comment input in editComment mutation.

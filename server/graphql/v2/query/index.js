@@ -1,14 +1,12 @@
-import AccountQuery from './AccountQuery';
-import CollectiveQuery from './CollectiveQuery';
-import ExpenseQuery from './ExpenseQuery';
-import ConversationQuery from './ConversationQuery';
-
+import models from '../../../models';
 // import TransactionQuery from './TransactionQuery';
 // import TransactionsQuery from './TransactionsQuery';
-
 import { Account } from '../interface/Account';
 
-import models from '../../../models';
+import AccountQuery from './AccountQuery';
+import CollectiveQuery from './CollectiveQuery';
+import ConversationQuery from './ConversationQuery';
+import ExpenseQuery from './ExpenseQuery';
 
 const query = {
   account: AccountQuery,

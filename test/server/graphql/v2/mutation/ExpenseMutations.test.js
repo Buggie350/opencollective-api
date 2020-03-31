@@ -1,16 +1,17 @@
 import { expect } from 'chai';
 import { pick } from 'lodash';
-import { graphqlQueryV2 } from '../../../../utils';
+
+import { idEncode, IDENTIFIER_TYPES } from '../../../../../server/graphql/v2/identifiers';
 import { randEmail, randUrl } from '../../../../stores';
 import {
   fakeCollective,
-  fakeUser,
   fakeExpense,
-  fakePayoutMethod,
-  randStr,
   fakeExpenseAttachment,
+  fakePayoutMethod,
+  fakeUser,
+  randStr,
 } from '../../../../test-helpers/fake-data';
-import { idEncode, IDENTIFIER_TYPES } from '../../../../../server/graphql/v2/identifiers';
+import { graphqlQueryV2 } from '../../../../utils';
 
 const createExpenseMutation = `
 mutation createExpense($expense: ExpenseCreateInput!, $account: AccountReferenceInput!) {
