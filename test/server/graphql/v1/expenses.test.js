@@ -1141,6 +1141,7 @@ describe('server/graphql/v1/expenses', () => {
           'USD',
           10,
         ));
+        await hostCollective.update({ plan: 'network-host-plan' });
         // And given a user to file expenses
         ({ user } = await store.newUser('someone cool'));
         await addFunds(user, hostCollective, collective, 15000000);
